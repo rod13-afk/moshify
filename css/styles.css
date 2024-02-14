@@ -107,6 +107,7 @@ a {
   font-weight: 600;
   padding: 0.5rem 2rem;
   white-space: nowrap;
+  width: fit-content;
 }
 
 .badge--primary {
@@ -205,12 +206,20 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 1rem 4.5rem;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.3s;
   white-space: nowrap;
   width: 100%;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--fit-content {
@@ -282,7 +291,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -758,5 +767,60 @@ a {
   .hero__content {
     text-align: start;
     align-self: center;
+  }
+}
+
+/* Domain block */
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain {
+  width: auto;
+}
+
+.block-domain__prices {
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.block-domain .input-group .input {
+  width: 50%;
+}
+
+.block-domain .input-group .btn {
+  padding: 1rem;
+}
+
+.block-domain .input-group .icon {
+  margin-right: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .block-domain .input-group .input {
+    width: 50%;
+  }
+
+  .block-domain .input-group .btn {
+    padding: 1rem 4.5rem;
+  }
+
+  .block-domain .input-group .icon {
+    margin-right: 1rem;
   }
 }
