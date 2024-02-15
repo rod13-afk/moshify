@@ -890,3 +890,32 @@ a {
     transform: scale(1.16);
   }
 }
+
+/* Features */
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem auto;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.grid--1x2 .media {
+  display: block;
+}
+
+.grid .media__image {
+  margin-left: 2rem;
+}
+
+.grid .feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
