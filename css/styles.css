@@ -732,7 +732,7 @@ a {
 
 .nav__toggler {
   opacity: 0.5;
-  transition: box-shadow 0.15px;
+  transition: box-shadow 0.15s;
   cursor: pointer;
 }
 
